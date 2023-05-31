@@ -21,3 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 //rotta per API
 Route::get('/projects', [ProjectController::class, 'index']);
+
+Route::get('/project/{slug}', [ProjectController::class, 'show']);
